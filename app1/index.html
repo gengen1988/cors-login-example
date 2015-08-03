@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+</head>
+<body>
+
+  app1
+  <script>
+  $.ajax('//123.56.89.86:20091/ecustmoer/index/login/?phone=13021184445&password=111111', {
+    xhrFields: {
+      withCredentials: true
+    }
+  }).then(function(res) {
+    window.location.href="http://123.56.89.86:20091/sales/order/history/";
+  }, function() {
+    window.location.href="http://123.56.89.86:20091/sales/order/history/";
+  });
+  </script>
+
+</body>
+</html>
